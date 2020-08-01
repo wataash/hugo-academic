@@ -7,6 +7,11 @@
   languageCode = "en-us"
   # contentDir = "content/en"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
 
+# [ja]
+#   # https://github.com/gohugoio/hugo/issues/349
+#   # https://www.rssboard.org/rss-language-codes
+#   languageCode = "ja"
+
 # Uncomment the lines below to configure your website in a second language.
 #[zh]
 #  languageCode = "zh-Hans"
@@ -18,3 +23,22 @@
 #    name = "Wo"
 #    url = "#about"
 #    weight = 1
+
+## https://gohugo.io/content-management/multilingual/
+#[languages]
+#  [languages.en]
+#    # http://localhost:1313/
+#    # baseURL = "https://blog.wataash.com"
+#    languageName = "English"
+#    weight = 1.0  # no effect to public/
+#    [languages.en.params]
+#      baseURL2 = "https://blog.wataash.com"
+#  [languages.ja]
+#    # http://localhost:1314/ja/
+#    # dowsn't work well (e.g. ja/search/)
+#    # baseURL = "https://blog.wataash.com/ja"
+#    title = "wataash's blog（にほんご）"
+#    languageName = "にほんご"
+#    weight = 2.0   # no effect to public/
+#    [languages.ja.params]
+#      baseURL2 = "https://blog.wataash.com/ja"
